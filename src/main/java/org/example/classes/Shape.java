@@ -1,6 +1,9 @@
 package org.example.classes;
 
-public interface Shape extends Test {
+import org.example.annotation.Generated;
+
+@Generated
+public interface Shape {
     double getArea();
     double getPerimeter();
 }

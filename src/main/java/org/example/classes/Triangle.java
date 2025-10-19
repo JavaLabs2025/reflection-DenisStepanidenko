@@ -8,7 +8,7 @@ public class Triangle implements Shape {
     private double sideB;
     private double sideC;
 
-    public Triangle(double sideA, double sideB, double sideC) {
+    private Triangle(double sideA, double sideB, double sideC) {
         this.sideA = sideA;
         this.sideB = sideB;
         this.sideC = sideC;
@@ -23,5 +23,14 @@ public class Triangle implements Shape {
     @Override
     public double getPerimeter() {
         return sideA + sideB + sideC;
+    }
+
+    @Override
+    public String toString() {
+        return "Triangle{" +
+                "sideA=" + sideA +
+                ", sideB=" + sideB +
+                ", sideC=" + sideC +
+                '}';
     }
 }
