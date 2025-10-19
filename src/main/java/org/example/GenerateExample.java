@@ -22,9 +22,10 @@ public class GenerateExample {
 
 
         Generator generator = new Generator("org.example");
-        Cart cart = (Cart) generator.generateValueOfType(Cart.class);
 
-        System.out.println(cart);
+        Example example = (Example) generator.generateValueOfType(Example.class);
+//
+
 
 //        Shape shape = (Shape) generator.generateValueOfType(Shape.class);
 //        System.out.println(shape);
