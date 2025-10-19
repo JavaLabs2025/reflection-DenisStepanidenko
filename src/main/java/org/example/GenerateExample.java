@@ -1,10 +1,7 @@
 package org.example;
 
 
-import org.example.classes.BinaryTreeNode;
-import org.example.classes.Cart;
-import org.example.classes.Example;
-import org.example.classes.Shape;
+import org.example.classes.*;
 import org.example.generator.Generator;
 
 import java.io.File;
@@ -20,30 +17,27 @@ public class GenerateExample {
     public static void main(String[] args) throws IOException, InvocationTargetException, InstantiationException, IllegalAccessException {
 
 
-
         Generator generator = new Generator("org.example");
 
         Example example = (Example) generator.generateValueOfType(Example.class);
-//
+        System.out.println(example);
 
+        BinaryTreeNode binaryTreeNode = (BinaryTreeNode) generator.generateValueOfType(BinaryTreeNode.class);
+        System.out.println(binaryTreeNode);
 
-//        Shape shape = (Shape) generator.generateValueOfType(Shape.class);
-//        System.out.println(shape);
+        Cart cart = (Cart) generator.generateValueOfType(Cart.class);
+        System.out.println(cart);
 
-//        BinaryTreeNode binaryTreeNode = (BinaryTreeNode) generator.generateValueOfType(BinaryTreeNode.class);
-//
-//        System.out.println(binaryTreeNode);
+        Product product = (Product) generator.generateValueOfType(Product.class);
+        System.out.println(product);
 
+        Rectangle rectangle = (Rectangle) generator.generateValueOfType(Rectangle.class);
+        System.out.println(rectangle);
 
+        Triangle triangle = (Triangle) generator.generateValueOfType(Triangle.class);
+        System.out.println(triangle);
 
-//        var gen = new Generator();
-//        try {
-//            Object generated = gen.generateValueOfType(Example.class);
-//            System.out.println(generated);
-//        } catch (Throwable e) {
-//            throw new RuntimeException(e);
-//        }
-
-
+        Shape shape = (Shape) generator.generateValueOfType(Shape.class);
+        System.out.println(shape);
     }
 }
