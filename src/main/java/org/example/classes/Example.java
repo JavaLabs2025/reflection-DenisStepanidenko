@@ -1,5 +1,8 @@
 package org.example.classes;
 
+import org.example.annotation.Generated;
+
+@Generated
 public class Example {
     int i;
 
